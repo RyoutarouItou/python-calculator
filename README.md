@@ -16,12 +16,24 @@ Python で作った簡単な電卓プログラムです。ターミナル版と�
 - Python 3
 - Gradio（ウェブ版のみ）
 
+Python は https://www.python.org/downloads/ からインストールできます。Windows では、インストール画面の最初にある「Add python.exe to PATH」にチェックを入れてください。
+
+コマンドは、Mac では「ターミナル」、Windows では「PowerShell」で実行します。
+
 ## 使い方（ターミナル版）
 
-ターミナルで次のコマンドを実行します。
+次のコマンドを実行します。
+
+Mac:
 
 ```
 python3 tutorial.py
+```
+
+Windows:
+
+```
+python tutorial.py
 ```
 
 画面の案内に従って操作します。
@@ -54,15 +66,32 @@ python3 tutorial.py
 
 最初に一度だけ、このフォルダ専用の Python 環境を作って Gradio を入れます。
 
+Mac:
+
 ```
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
+Windows:
+
+```
+python -m venv .venv
+.venv\Scripts\pip install -r requirements.txt
+```
+
 次のコマンドでアプリを起動します。
+
+Mac:
 
 ```
 .venv/bin/python app.py
+```
+
+Windows:
+
+```
+.venv\Scripts\python app.py
 ```
 
 ブラウザで http://127.0.0.1:7860 を開くと、電卓が表示されます。数字を2つ入力し、計算の種類を選んで「計算する」を押してください。
