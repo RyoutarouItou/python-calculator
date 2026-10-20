@@ -4,3 +4,6 @@ __pycache__/
 
 # Mac が自動で作るファイル
 .DS_Store
+
+# Python の仮想環境
+.venv/
